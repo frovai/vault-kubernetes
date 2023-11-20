@@ -1,0 +1,6 @@
+Key-Type: default
+Subkey-Type: default
+Name-Real: MYDOMAINNAME
+Name-Comment: How to Use PGP to Encrypt Your Terraform Secrets
+Name-Email: MYEMAIL@MYDOMAINNAME.com.br
+Expire-Date: 2

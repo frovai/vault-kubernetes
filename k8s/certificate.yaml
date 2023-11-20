@@ -1,0 +1,17 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: vault-ca-secrets
+  namespace: vault
+spec: 
+  dnsNames:
+  - "vault.MYDOMAINHERE.com.br"
+    #  - "127.0.0.1"
+  issuerRef: 
+    group: cert-manager.io
+    name: kafka-issuer
+    kind: ClusterIssuer
+  secretName: vault-ca-secrets
+  subject:
+    organizations:
+      - MYORGANIZATIONHERE
